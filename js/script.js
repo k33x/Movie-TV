@@ -10,7 +10,8 @@ const global = {
   },
   api: {
     apiKey: "382a7177f94cab525422ebbb33c7e8fa",
-    apiUrl: "https://api.themoviedb.org/3/",
+    //apiUrl: "https://api.themoviedb.org/3/",
+    apiUrl: "https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/",
   },
 };
 
