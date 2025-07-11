@@ -10,10 +10,7 @@ const global = {
   },
   api: {
     apiKey: "382a7177f94cab525422ebbb33c7e8fa",
-    //apiUrl: "https://api.themoviedb.org/3/",
-    // apiUrl: "https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/",
-
-    apiUrl: "/api/",
+    apiUrl: "https://api.themoviedb.org/3/",
   },
 };
 
@@ -467,6 +464,7 @@ function highLightActiveLink() {
   const links = document.querySelectorAll(".nav-link");
   links.forEach((link) => {
     const linkPath = new URL(link.href).pathname;
+    console.log(linkPath);
     if (linkPath === global.currentPage) {
       link.classList.add("active");
     }
@@ -499,20 +497,20 @@ function addCommasToNumber(number) {
 //init
 function init() {
   switch (global.currentPage) {
-    case "/test/flixx-app-theme/index.html":
+    case "/UP-Git/LKNF-movie/index.html":
       displaySlider();
       displayPopularMovies();
       break;
-    case "/test/flixx-app-theme/shows.html":
+    case "/UP-Git/LKNF-movie/shows.html":
       displayPopularShows();
       break;
-    case "/test/flixx-app-theme/search.html":
+    case "/UP-Git/LKNF-movie/search.html":
       search();
       break;
-    case "/test/flixx-app-theme/movie-details.html":
+    case "/UP-Git/LKNF-movie/movie-details.html":
       displayMovieDetails();
       break;
-    case "/test/flixx-app-theme/tv-details.html":
+    case "/UP-Git/LKNF-movie/tv-details.html":
       displayShowDetails();
       break;
   }
