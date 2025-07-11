@@ -502,7 +502,7 @@ function init() {
     global.currentPage.replace("/Movie-TV/index.html");
   } */
   if (global.currentPage === "/Movie-TV") {
-    window.location = "https://k33x.github.io/Move-TV/index.html";
+    window.location.href = "https://k33x.github.io/Move-TV/index.html";
   }
   switch (global.currentPage) {
     case "/Move-TV":
