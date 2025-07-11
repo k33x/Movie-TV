@@ -497,7 +497,7 @@ function addCommasToNumber(number) {
 }
 
 //init
-function init() {
+/* function init() {
   switch (global.currentPage) {
     case "/Move-TV":
       displaySlider();
@@ -519,6 +519,23 @@ function init() {
     case "/Move-TV/tv-details.html":
       displayShowDetails();
       break;
+  }
+  highLightActiveLink();
+} */
+function init() {
+  const path = global.currentPage.toLowerCase();
+  // 匹配主页（/Move-TV/, /Move-TV/index.html, 或 /）
+  if (path === "/" || path.includes("index.html") || path === "/Move-TV/") {
+    displaySlider();
+    displayPopularMovies();
+  } else if (path.includes("shows.html")) {
+    displayPopularShows();
+  } else if (path.includes("search.html")) {
+    search();
+  } else if (path.includes("movie-details.html")) {
+    displayMovieDetails();
+  } else if (path.includes("tv-details.html")) {
+    displayShowDetails();
   }
   highLightActiveLink();
 }
