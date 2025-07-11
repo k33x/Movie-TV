@@ -498,8 +498,8 @@ function addCommasToNumber(number) {
 
 //init
 function init() {
-  if (global.pathname === "/Movie-TV") {
-    global.replace("/Movie-TV/index.html");
+  if (global.currentPage.pathname === "/Movie-TV") {
+    global.currentPage.replace("/Movie-TV/index.html");
   }
   switch (global.currentPage) {
     case "/Move-TV":
