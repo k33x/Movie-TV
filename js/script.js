@@ -498,8 +498,11 @@ function addCommasToNumber(number) {
 
 //init
 function init() {
-  if (global.currentPage.pathname === "/Movie-TV") {
+  /* if (global.currentPage.pathname === "/Movie-TV") {
     global.currentPage.replace("/Movie-TV/index.html");
+  } */
+  if (global.currentPage === "/Movie-TV") {
+    window.location.replace("https://k33x.github.io/Move-TV/index.html");
   }
   switch (global.currentPage) {
     case "/Move-TV":
