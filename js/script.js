@@ -499,6 +499,10 @@ function addCommasToNumber(number) {
 //init
 function init() {
   switch (global.currentPage) {
+    case "/Move-TV":
+      displaySlider();
+      displayPopularMovies();
+      break;
     case "/Move-TV/index.html":
       displaySlider();
       displayPopularMovies();
