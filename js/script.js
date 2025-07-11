@@ -464,7 +464,9 @@ function highLightActiveLink() {
   const links = document.querySelectorAll(".nav-link");
   links.forEach((link) => {
     const linkPath = new URL(link.href).pathname;
-    console.log(linkPath);
+    console.log("linkPath" + linkPath);
+    console.log("link.href" + link.href);
+    console.log("global.currentPage" + global.currentPage);
     if (linkPath === global.currentPage) {
       link.classList.add("active");
     }
@@ -497,20 +499,20 @@ function addCommasToNumber(number) {
 //init
 function init() {
   switch (global.currentPage) {
-    case "/UP-Git/LKNF-movie/index.html":
+    case "/Move-TV/index.html":
       displaySlider();
       displayPopularMovies();
       break;
-    case "/UP-Git/LKNF-movie/shows.html":
+    case "/Move-TV/shows.html":
       displayPopularShows();
       break;
-    case "/UP-Git/LKNF-movie/search.html":
+    case "/Move-TV/search.html":
       search();
       break;
-    case "/UP-Git/LKNF-movie/movie-details.html":
+    case "/Move-TV/movie-details.html":
       displayMovieDetails();
       break;
-    case "/UP-Git/LKNF-movie/tv-details.html":
+    case "/Move-TV/tv-details.html":
       displayShowDetails();
       break;
   }
