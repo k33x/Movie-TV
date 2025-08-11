@@ -505,24 +505,24 @@ function init() {
     window.location.replace = "https://k33x.github.io/Movie-TV/index.html";
   }
   switch (global.currentPage) {
-    case "/Move-TV":
+    case "/Movie-TV":
       displaySlider();
       displayPopularMovies();
       break;
-    case "/Move-TV/index.html":
+    case "/Movie-TV/index.html":
       displaySlider();
       displayPopularMovies();
       break;
-    case "/Move-TV/shows.html":
+    case "/Movie-TV/shows.html":
       displayPopularShows();
       break;
-    case "/Move-TV/search.html":
+    case "/Movie-TV/search.html":
       search();
       break;
-    case "/Move-TV/movie-details.html":
+    case "/Movie-TV/movie-details.html":
       displayMovieDetails();
       break;
-    case "/Move-TV/tv-details.html":
+    case "/Movie-TV/tv-details.html":
       displayShowDetails();
       break;
   }
